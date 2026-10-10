@@ -16,7 +16,7 @@ async function run() {
     const items = [];
     let match;
 
-    while ((match = entryRegex.exec(xml)) !== null && items.length < 20) {
+    while ((match = entryRegex.exec(xml)) !== null && items.length < 7) {
       const entry = match[1];
       const id = (entry.match(idRegex) || [])[1];
       const title = (entry.match(titleRegex) || [])[1];
